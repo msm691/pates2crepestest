@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÂTES2CRÊPES - Fast Food Révolutionnaire | Vienne</title>
+    <meta name="description" content="Découvrez PÂTES2CRÊPES, le fast-food qui révolutionne la crêpe avec des saveurs explosives inspirées des rues de San Andreas ! Vienne, 38200.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span>P2C</span>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-title">PÂTES2CRÊPES</div>
+                        <div class="logo-subtitle">FAST FOOD</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">ACCUEIL</a>
+                    <a href="#menu" class="nav-link">MENU</a>
+                    <a href="#about" class="nav-link">À PROPOS</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                    <a href="#contact" class="btn-primary">COMMANDER</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" onclick="toggleMobileMenu()">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link">ACCUEIL</a>
+                <a href="#menu" class="nav-link">MENU</a>
+                <a href="#about" class="nav-link">À PROPOS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+                <button class="btn-primary">COMMANDER</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1735838997518-1da7885b931c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMHN0cmVldCUyMGFydCUyMGdyYWZmaXRpJTIwd2FsbHxlbnwxfHx8fDE3NTc3MTE3NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Urban street art background">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    ★ FAST FOOD RÉVOLUTIONNAIRE ★
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-main">PÂTES2CRÊPES</span>
+                    <span class="title-sub">LES CRÊPES QUI DÉFONCENT</span>
+                </h1>
+
+                <p class="hero-description">
+                    Bienvenue dans l'univers de <span class="highlight">PÂTES2CRÊPES</span>, 
+                    le fast-food qui révolutionne la crêpe avec des saveurs explosives inspirées des rues de San Andreas !
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-secondary-large">🔥 DÉCOUVRIR LE MENU</a>
+                    <a href="#contact" class="btn-secondary-large">📍 NOUS TROUVER</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number orange">30+</div>
+                        <div class="stat-text">Clients Servis/jour</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number pink">4,8★</div>
+                        <div class="stat-text">Note moyenne</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number purple">24H</div>
+                        <div class="stat-text">Service continu</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number orange">∞</div>
+                        <div class="stat-text">Possibilités</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">★ NOS MENUS LÉGENDAIRES ★</div>
+                    <h2 class="section-title">CARTE EXPLOSIVE</h2>
+                    <p class="section-description">
+                        Des saveurs qui font trembler San Andreas ! Découvre nos créations uniques inspirées des rues de la ville.
+                    </p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Menu Signature -->
+                    <div class="menu-card signature">
+                        <div class="menu-card-header">
+                            <div class="menu-image">
+                                <img src="https://images.unsplash.com/photo-1740853799275-b7305112ecb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVwZSUyMHBhbmNha2UlMjBmb29kfGVufDF8fHx8MTc1NzcxMTc0NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Menu Signature Tradition">
+                            </div>
+                            <div class="menu-info">
+                                <h3 class="menu-title">MENU SIGNATURE TRADITION P2C</h3>
+                                <div class="menu-price">9.90€</div>
+                                <p class="menu-subtitle">Crêpes ronde, Pâte de crêpes, Crêpes rolls, Boisson et salade composée incluses</p>
+                            </div>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-section-content">
+                                <h4 class="menu-section-title">NOS CRÉATIONS SIGNATURE :</h4>
+                                <div class="menu-item">
+                                    <h5>El Provenciano</h5>
+                                    <p>Sauté de Bœuf, Pommes de terre, oignons, poivrons, mozzarella</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h5>El Cremoso</h5>
+                                    <p>Filet de Poulet, Pommes de terre, oignons, champignons, crème, raclette</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h5>La River</h5>
+                                    <p>Pommes de terre, oignons, petites tomates fraîches, crème, truite</p>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-section-content">
+                                <h4 class="menu-section-title">SALADES :</h4>
+                                <div class="menu-item">
+                                    <h5>Petite Salade Composée</h5>
+                                    <p>Salade, Oignons marinés, tomates fraîches, sauce salade (miel moutarde)</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h5>Salade Crêpe César Bowl</h5>
+                                    <p>Salade, oignons, tomates fraîches, poulet, crêpe toasts, sauce crêpe César (crème liquide miel moutarde)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            
+
+                    <!-- Menu Vienne -->
+                    <div class="menu-card vienne">
+                        <div class="menu-card-header">
+                            <div class="menu-image">
+                                <img src="https://images.unsplash.com/photo-1740853799275-b7305112ecb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVwZSUyMHBhbmNha2UlMjBmb29kfGVufDF8fHx8MTc1NzcxMTc0NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Menu Vienne City">
+                            </div>
+                            <div class="menu-info">
+                                <h3 class="menu-title">VIENNE CITY</h3>
+                                <p class="menu-subtitle">DIY SALÉ : 9.90€ Solo / 12.50€ Avec Boisson + Salade <BR> DIY SUCRÉ : 5.50€ Solo / 6.50€ Avec Boisson</p>
+                            </div>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-section-content">
+                                <h4 class="menu-category-title">MENU DIY SALÉ</h4>
+                                <div class="diy-step">
+                                    <h5>1 - CHOISIS TA PÂTE :</h5>
+                                    <div class="options">
+                                        <span class="option">NOODLES P2C +1€</span>
+                                        <span class="option">VEGE</span>
+                                        <span class="option">ORIGINAL P2C</span>
+                                        <span class="option">TACOS</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>2 - CHOISIS TA PROTÉINE :</h5>
+                                    <div class="options">
+                                        <span class="option">BEEF</span>
+                                        <span class="option">CHICKEN</span>
+                                        <span class="option">RIVER (Truite Fumée)</span>
+                                        <span class="option">2 ŒUFS</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>3 - CHOISIS TES 2 LÉGUMES :</h5>
+                                    <div class="options">
+                                        <span class="option">SAUTÉ POMMES DE TERRE</span>
+                                        <span class="option">MARINADE DE CHAMPIGNON</span>
+                                        <span class="option">OIGNONS</span>
+                                        <span class="option">POIVRONS MAISON</span>
+                                        <span class="option">TOMATES CERISES FRAÎCHES</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>4 - CHOISIS TON FROMAGE :</h5>
+                                    <div class="options">
+                                        <span class="option">MOUTAIN (Reblochon Ou Raclette)</span>
+                                        <span class="option">MOZZARELLA</span>
+                                        <span class="option">EMMENTAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-section-content">
+                                <h4 class="menu-category-title">MENU DIY SUCRÉE</h4>
+                                <div class="diy-step">
+                                    <h5>1 - CHOISIS TA PÂTE :</h5>
+                                    <div class="options">
+                                        <span class="option">NOODLES P2C +1€</span>
+                                        <span class="option">VEGE</span>
+                                        <span class="option">ORIGINAL P2C</span>
+                                        <span class="option">TACOS</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>2 - CHOISIS TON CROQUANT :</h5>
+                                    <div class="options">
+                                        <span class="option">MAXI</span>
+                                        <span class="option">BUENO</span>
+                                        <span class="option">COUNTRY</span>
+                                        <span class="option">COCO</span>
+                                        <span class="option">CHOUCHOU</span>
+                                        <span class="option">CHOCO WHITE</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>3 - CHOISIS TON NAPPAGE :</h5>
+                                    <div class="options">
+                                        <span class="option">NUTELLA</span>
+                                        <span class="option">SPECULOOS</span>
+                                        <span class="option">MIEL</span>
+                                        <span class="option">CARAMEL</span>
+                                        <span class="option">CONFITURES (Lait - Marron - Fraise)</span>
+                                    </div>
+                                </div>
+                                <div class="diy-step">
+                                    <h5>4 - CHANTILLY / FRUITS / GLACES :</h5>
+                                    <div class="options">
+                                        <span class="option">CHANTILLY</span>
+                                        <span class="option">BANANE</span>
+                                        <span class="option">GLACE VANILLE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                <!-- Call to Action -->
+                <div class="menu-cta">
+                    <h3>PRÊT À VIVRE L'EXPÉRIENCE ?</h3>
+                    <p>Commande maintenant et découvre pourquoi nos crêpes font trembler tout San Andreas !</p>
+                    <div class="cta-buttons">
+                        <a href="A MODIFIER" class="btn-cta-primary">🔥 COMMANDER MAINTENANT</a>
+                        <a href="tel:+33768189315" class="btn-cta-secondary">📞 APPELER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge rotate">★ NOTRE HISTOIRE ★</div>
+                    <h2 class="section-title">L'ORIGINE DE LA LÉGENDE</h2>
+                    <p class="section-description">
+                        Dans les rues chaudes de San Andreas, une révolution culinaire était sur le point de naître...
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1740853799275-b7305112ecb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVwZSUyMHBhbmNha2UlMjBmb29kfGVufDF8fHx8MTc1NzcxMTc0NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Delicious crepes">
+                        <div class="hot-badge">🔥 HOT !</div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <div class="about-story">
+                            <h3>DE LA PASSION À LA PERFECTION</h3>
+                            <p>Tout a commencé avec une idée folle : révolutionner l'univers de la crêpe en y apportant 
+                            l'énergie et l'attitude des rues de <span class="highlight-orange">San Andreas</span>.</p>
+                            <p>Chez <span class="highlight-pink">PÂTES2CRÊPES</span>, chaque crêpe est une œuvre d'art, 
+                            chaque bouchée une explosion de saveurs. Nous avons créé des recettes uniques qui mélangent 
+                            tradition française et influences urbaines internationales.</p>
+                            <p>Notre mission ? Te faire vivre une expérience culinaire <span class="highlight-orange">INOUBLIABLE</span> 
+                            dans une ambiance décontractée et survoltée !</p>
+                        </div>
+
+                        <div class="about-badges">
+                            <span class="award-badge">🏆 MEILLEUR FAST-FOOD 2025</span>
+                            <span class="award-badge">⭐ 5/5 ÉTOILES CLIENT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>RÉVOLUTIONNAIRE</h4>
+                        <p>Des crêpes comme tu n'en as jamais goûté, avec des saveurs qui explosent en bouche !</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⏰</div>
+                        <h4>SERVICE RAPIDE</h4>
+                        <p>Fast-food nouvelle génération : ta commande prête en moins de 5 minutes !</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h4>ESPACE GAMING</h4>
+                        <p>Un espace gaming préparé pour les groupes de gamers !</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📍</div>
+                        <h4>LOCALISATION PARFAITE</h4>
+                        <p>Au cœur de Vienne, facilement accessible pour tous les amateurs de sensations !</p>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>NOTRE ÉQUIPE DE CHOC</h3>
+                    <p>Des passionnés qui mettent leur âme dans chaque crêpe pour te garantir une expérience exceptionnelle !</p>
+                    <div class="team-emojis">
+                        <span>👨‍🍳</span><span>👩‍🍳</span><span>👨‍💼</span><span>👩‍💼</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-bg">
+                <img src="https://images.unsplash.com/photo-1676894991145-ecc6d0c85007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZW9uJTIwY2l0eSUyMG5pZ2h0JTIwdXJiYW58ZW58MXx8fHwxNzU3NzExNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Neon city background">
+                <div class="contact-overlay"></div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">★ VIENS NOUS VOIR ★</div>
+                    <h2 class="section-title">ON T'ATTEND !</h2>
+                    <p class="section-description">
+                        Prêt à découvrir l'expérience PÂTES2CRÊPES ? Voici toutes les infos pour nous trouver et nous contacter !
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <!-- Location Card -->
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">
+                                <span class="contact-icon">📍</span>
+                                NOTRE LOCALISATION
+                            </h3>
+                            <div class="contact-details">
+                                <div class="detail-block">
+                                    <h4>PÂTES2CRÊPES VIENNE</h4>
+                                    <p>1 RUE DES 4 VENTS</p>
+                                    <p>38200 VIENNE</p>
+                                    <p class="highlight-orange">🚗 Parking gratuit disponible</p>
+                                </div>
+                                <div class="detail-block">
+                                    <h4>ZONE DE LIVRAISON</h4>
+                                    <p>Vienne et alentours</p>
+                                    <p class="highlight-orange">📦 Livraison à partir de 5€</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card -->
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">
+                                <span class="contact-icon">📞</span>
+                                CONTACT DIRECT
+                            </h3>
+                            <div class="contact-details">
+                                <div class="detail-block">
+                                    <h4>TÉLÉPHONE</h4>
+                                    <a href="tel:+33768189315" class="phone-number">+33 7 68 18 93 15</a>
+                                    <p>Commandes et renseignements</p>
+                                </div>
+                                <div class="detail-block">
+                                    <h4>SNAPCHAT</h4>
+                                    <a href="https://www.snapchat.com/add/p2c38" target="_blank" class="snapchat-text">@p2c38</a>
+                                    <p>Pour les news et offres spéciales !</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hours Card -->
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">
+                                <span class="contact-icon">⏰</span>
+                                HORAIRES
+                            </h3>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <h4>LUNDI - JEUDI</h4>
+                                    <p>11h00 - 22h00</p>
+                                </div>
+                                <div class="hours-item">
+                                    <h4>VENDREDI - SAMEDI</h4>
+                                    <p>11h00 - 23h00</p>
+                                </div>
+                                <div class="hours-item">
+                                    <h4>DIMANCHE</h4>
+                                    <p>12h00 - 22h00</p>
+                                </div>
+                                <div class="hours-continuous">
+                                    <p>🔥 SERVICE CONTINU TOUTE LA JOURNÉE !</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <!-- Order Card -->
+                        <div class="order-card">
+                            <div class="order-icon">🔥</div>
+                            <h3>COMMANDE MAINTENANT !</h3>
+                            <p>Appelle-nous ou viens directement au restaurant pour déguster nos créations légendaires !</p>
+                            <div class="order-buttons">
+                                <a href="tel:+33768189315" class="btn-cta-secondary">📞 APPELER</a>
+                                <a href="https://www.google.com/maps/place/Restaurant+Cr%C3%8Aperie/@45.5287577,4.8745829,21z/data=!4m6!3m5!1s0x47f4dfa9cfdb4e8f:0xf96891d1a0f5b3fa!8m2!3d45.5287651!4d4.8746691!16s%2Fg%2F11hhz695vd?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-cta-primary">🏪 VENIR AU RESTAURANT</a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-card">
+                            <h3>SUIS-NOUS !</h3>
+                            <div class="social-buttons">
+                                <button class="social-btn instagram">
+                                    <span class="social-icon">📷</span>
+                                    <span class="social-text">INSTA</span>
+                                </button>
+                                <button class="social-btn facebook">
+                                    <span class="social-icon">📘</span>
+                                    <span class="social-text">FACEBOOK</span>
+                                </button>
+                                <button class="social-btn twitter">
+                                    <span class="social-icon">🐦</span>
+                                    <span class="social-text">TWITTER</span>
+                                </button>
+                            </div>
+                            <p>Découvre nos dernières créations et offres exclusives !</p>
+                        </div>
+
+                        <!-- Special Offers -->
+                        <div class="offers-card">
+                            <div class="offers-icon">⚡</div>
+                            <h3>OFFRES SPÉCIALES</h3>
+                            <div class="offers-list">
+                                <p>🎯 Menu étudiant : </p>
+                                <p>👥 Groupes : </p>
+                                <p>🎂 Anniversaires : </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="map-section">
+                    <h3>PLAN D'ACCÈS</h3>
+                    <div class="map-placeholder">
+                        <div class="map-icon">🗺️</div>
+                        <p>Carte interactive bientôt disponible !</p>
+                        <p class="map-address">En attendant, utilise ton GPS avec notre adresse : 1 RUE DES 4 VENTS, 38200 VIENNE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Description -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span>P2C</span>
+                        </div>
+                        <div class="footer-logo-text">
+                            <div class="footer-logo-title">PÂTES2CRÊPES</div>
+                            <div class="footer-logo-subtitle">FAST FOOD RÉVOLUTIONNAIRE</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        L'expérience crêpe ultime inspirée des rues de San Andreas ! 
+                        Des saveurs explosives qui révolutionnent le fast-food français.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link instagram">📷</a>
+                        <a href="#" class="social-link facebook">📘</a>
+                        <a href="#" class="social-link twitter">🐦</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#menu">Notre Menu</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>CONTACT</h4>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p>1 RUE DES 4 VENTS</p>
+                            <p>38200 VIENNE</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <p>+33 7 68 18 93 15</p>
+                            <p>Commandes & Renseignements</p>
+                        </div>
+                    </div>
+                    <div class="footer-snapchat">
+                       <a href="https://www.snapchat.com/add/p2c38" target="_blank" class="snapchat-text">📸 Suis-nous sur Snapchat</a>
+                        <p>Pour les offres exclusives !</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horaires -->
+            <div class="footer-hours">
+                <h4>HORAIRES D'OUVERTURE</h4>
+                <div class="hours-footer-grid">
+                    <div class="hour-item">
+                        <p class="day">LUN - JEU</p>
+                        <p class="time">11h00 - 22h00</p>
+                    </div>
+                    <div class="hour-item">
+                        <p class="day">VEN - SAM</p>
+                        <p class="time">11h00 - 23h00</p>
+                    </div>
+                    <div class="hour-item">
+                        <p class="day">DIMANCHE</p>
+                        <p class="time">12h00 - 22h00</p>
+                    </div>
+                </div>
+                <p class="continuous-service">🔥 SERVICE CONTINU TOUTE LA JOURNÉE !</p>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2025 PÂTES2CRÊPES. Tous droits réservés. 
+                    <a href="https://www.google.com/maps/place/Restaurant+Cr%C3%8Aperie/@45.5287577,4.8745829,21z/data=!4m6!3m5!1s0x47f4dfa9cfdb4e8f:0xf96891d1a0f5b3fa!8m2!3d45.5287651!4d4.8746691!16s%2Fg%2F11hhz695vd?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="made-with"> 1 rue des 4 vents, 38200 Vienne - France.</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Politique de Confidentialité</a>
+                </div>
+            </div>
+
+            <!-- Special Message -->
+            <div class="footer-message">
+                <div class="footer-badge">⚡ P2C EST PRÊT POUR VOUS ACCUEILLIR ⚡</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-mobile .nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
